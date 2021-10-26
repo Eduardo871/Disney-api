@@ -1,0 +1,26 @@
+# Crear un personaje
+POST http://localhost:3001/character/create?apiKey=$2b$10$/3lXIs9V0eM6AnkJ0QgDpeDEP9jz7pgJMq1myzeScltY4RcWzW.Be HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ariel (la sirenita)",
+    "age":20,
+    "weight": 190,
+    "image": "es una imagen",
+    "description": "es una descripcion"   
+}
+
+
+# Modificar un personaje 
+
+PUT http://localhost:3001/localhost:3001/character/update?apiKey=$2b$10$/3lXIs9V0eM6AnkJ0QgDpeDEP9jz7pgJMq1myzeScltY4RcWzW.Be HTTP/1.1
+content-type: application/json
+
+{
+    "id":"1",
+    "name": "Ariel (la sirenita)",
+    "age":20,
+    "weight": 190,
+    "image": "es una imagen",
+    "description": "es una descripcion"
+}
