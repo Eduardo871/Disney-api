@@ -19,7 +19,7 @@ server.use(morgan('dev'));
 
 // Configuracion de las cabeceras de la
 // consulta http
-headersConfiguration();
+// headersConfiguration();
 
 // Middleware para detectar un error 
 // en la api y consoleguearlo
