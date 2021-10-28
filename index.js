@@ -19,11 +19,13 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-
+require('dotenv').config();
 // Conectano la base de datos y iniciando el servidor
 // en el puerto 3001
+const PORT = process.env.PORT
+
 conn.sync({ force: false }).then(() => {
-  server.listen(3001, () => {
+  server.listen(PORT, () => {
     console.log('%s listening at 3001');
   });
 });
