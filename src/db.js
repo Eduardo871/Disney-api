@@ -3,12 +3,12 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {
-  DATABASE_URL
+  DB_USER, DB_PASSWORD, DB_HOST,
 } = process.env;
 
 // inicialiazamos sequelized indicandole
 // cual es la base de datos que debe usar
-const sequelize = new Sequelize(`${DATABASE_URL}`, {
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/disney`, {
   logging: false, 
   native: false, 
 });
