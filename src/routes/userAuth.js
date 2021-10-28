@@ -17,6 +17,8 @@ server.get('/login', loginUser)
 // Ruta para probar el bulkcreate
 server.get('/bulkcreate', bulkcreateGener);
 
+server.get('/', (req, res) => {res.send("Funciona está deployada")})
+
 
 
 module.exports = server;
