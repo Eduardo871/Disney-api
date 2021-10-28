@@ -1,3 +1,6 @@
+// Clase con las consultas
+// básicas.
+
 class Crud {
     constructor(db){
         this.db = db;

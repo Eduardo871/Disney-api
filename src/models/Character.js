@@ -15,6 +15,7 @@ module.exports = (sequelize) => {
             type: INTEGER,
             allownull: true,
         },
+        
         image : {
             type: STRING,
             allownull: false,
