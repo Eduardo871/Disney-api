@@ -8,7 +8,7 @@ const {
 
 // inicialiazamos sequelized indicandole
 // cual es la base de datos que debe usar
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/disney`, {
+const sequelize = new Sequelize(`postgres://ginnflgd:sivaoeoqvfJxg4LgXVFaAl9EA6hT2WYm@fanny.db.elephantsql.com/ginnflgd`, {
   logging: false, 
   native: false, 
 });
